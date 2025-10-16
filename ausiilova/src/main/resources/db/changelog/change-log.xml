@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <changeSet runAlways="true" author="ausiilova" id="script1" dbms="postgresql">
+    <changeSet author="ausiilova" id="script1" dbms="postgresql">
         <sqlFile dbms="postgresql"
                  path="scripts/script1.sql"
                  encoding="UTF-8"
@@ -14,5 +14,16 @@
                  stripComments="true"/>
         <comment>Создание первой таблицы</comment>
     </changeSet>
+
+    <changeSet runAlways="true" author="ausiilova" id="script2" dbms="postgresql">
+        <sqlFile dbms="postgresql"
+             path="scripts/script2.sql"
+             encoding="UTF-8"
+             relativeToChangelogFile="true"
+             splitStatements="true"
+             stripComments="true"/>
+        <comment>Добавление ФИО при каждом запуске</comment>
+    </changeSet>
+
 
 </databaseChangeLog>
