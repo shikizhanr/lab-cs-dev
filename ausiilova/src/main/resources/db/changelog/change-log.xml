@@ -15,7 +15,7 @@
         <comment>Создание первой таблицы</comment>
     </changeSet>
 
-    <changeSet runOnChange="true" author="ausiilova" id="script2" dbms="postgresql">
+    <changeSet runAlways="true" author="ausiilova" id="script2-${now}" dbms="postgresql">
         <sqlFile dbms="postgresql"
              path="scripts/script2.sql"
              encoding="UTF-8"
