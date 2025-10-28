@@ -1,4 +1,4 @@
-CREATE SCHEMA IF NOT EXISTS utmn;
+CREATE SCHEMA utmn;
 
 CREATE TABLE utmn.student
 (
